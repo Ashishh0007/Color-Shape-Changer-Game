@@ -59,14 +59,19 @@ clickShape.addEventListener("click", function () {
 
 var sound = document.getElementById('sound');
 
-//audio added in background
-window.addEventListener("DOMContentLoaded", event => {
-    const audio = document.querySelector("audio");
-    audio.volume = 0.1;
-    audio.play();
-    audio.loop = true;
-    audio.muted = false;
-  });
+// //audio added in background
+// window.addEventListener("DOMContentLoaded", event => {
+//     const audio = document.querySelector("audio");
+//     audio.volume = 0.1;
+//     audio.play();
+//     audio.loop = true;
+//     audio.muted = false;
+//   });
+
+var audio = new Audio('./assets/music/RockThePartyInstrumental.mp3');
+audio.play();
+audio.volume = 0.1;
+audio.loop = true;
 
 
 
