@@ -69,7 +69,9 @@ var sound = document.getElementById('sound');
 //   });
 
 var audio = new Audio('./assets/music/RockThePartyInstrumental.mp3');
-audio.play();
+clickColor.onclick = () => { audio.play(); }
+clickShape.onclick = () => { audio.play(); }
+audio.muted = false;
 audio.volume = 0.1;
 audio.loop = true;
 
